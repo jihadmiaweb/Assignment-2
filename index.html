@@ -52,57 +52,45 @@
 
 
     <!-- Hero Section-start -->
-    <section
-        class="min-h-screen bg-[#190D31] flex items-center justify-center text-center overflow-hidden relative  lg:pt-24 lg:pb-10">
-        <!-- Background Image -->
-        <img src="./assets/hero-bg.png" class="absolute inset-0 w-full h-full object-cover object-center opacity-100"
-            alt="">
+    <section style="background-image: url('./assets/hero-bg.png');"
+        class="relative min-h-screen flex  inset-0 z-0 bg-cover bg-center bg-no-repeat items-center justify-center text-center overflow-hidden pt-24 pb-10 px-4 bg-[#190D31]">
+        s
+        <div class="relative z-10 flex flex-col items-center max-w-4xl mx-auto">
 
-
-        <!-- Overlay (optional but premium look) -->
-
-
-        <!-- Content -->
-        <div class="relative z-10">
-
-            <!-- Circle Area -->
-            <div class="relative mx-auto w-[220px] h-[220px] sm:w-[220px] sm:h-[220px] lg:w-[260px] lg:h-[260px]">
-
-                <img class="absolute inset-0 w-full h-full" src="./assets/hero-circle.png" alt="">
+            <div class="relative w-[180px] h-[180px] sm:w-[220px] sm:h-[220px] lg:w-[280px] lg:h-[280px]">
+                <img class="absolute inset-0 w-full h-full object-contain animate-spin-slow"
+                    src="./assets/hero-circle.png" alt="Decorative Circle">
 
                 <span
-                    class="absolute top-2 right-3 lg:top-4 lg:right-6 bg-green-400 text-black text-[10px] lg:text-xs font-bold px-2 py-0.5 rounded-full">
+                    class="absolute top-2 right-0 lg:top-6 lg:right-0 bg-green-400 text-black text-[10px] lg:text-xs font-bold px-3 py-1 rounded-full shadow-lg">
                     NEW
                 </span>
 
                 <div class="absolute inset-0 flex items-center justify-center">
-                    <img src="./assets/microphone.png" class="w-12 sm:w-16 lg:w-20" alt="">
+                    <img src="./assets/microphone.png" class="w-14 sm:w-16 lg:w-20 drop-shadow-2xl" alt="Microphone">
                 </div>
-
             </div>
 
-            <!-- Title -->
-            <h1 class="text-white text-3xl sm:text-4xl lg:text-5xl font-bold mt-5 lg:mt-8">
+            <h1 class="text-white text-2xl sm:text-5xl lg:text-4xl font-bold mt-6 lg:mt-10 tracking-tight">
                 TechWave
             </h1>
 
-            <!-- Description -->
-            <p class="text-gray-400 text-xs sm:text-sm mt-3 max-w-md mx-auto px-2 leading-relaxed">
-                Your daily dose of tech insights, productivity hacks, and personal growth
+            <p class="text-gray-300 text-sm sm:text-base lg:text-lg mt-4 max-w-md mx-auto leading-relaxed">
+                Your daily dose of tech insights, productivity hacks, and personal growth.
             </p>
 
-            <!-- Buttons -->
-            <div class="flex flex-row sm:flex-row items-center justify-center gap-3 sm:gap-4 mt-5 lg:mt-6">
+            <div class="flex flex-row sm:flex-row items-center justify-center gap-4 mt-8 sm:w-auto">
 
-                <button class="flex items-center gap-2 px-4 lg:px-5 py-2 rounded-full text-white text-xs sm:text-sm
-                bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 shadow-lg">
-                    <img width="14" src="./assets/spotify.png" alt="">
+                <button
+                    class=" sm:w-auto flex items-center justify-center gap-2 px-3 lg:px-6 py-2 rounded-full text-white text-sm font-semibold
+                bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 shadow-xl hover:scale-105 transition-transform">
+                    <img width="18" src="./assets/spotify.png" alt="Spotify">
                     Listen on Spotify
                 </button>
 
-                <button class="flex items-center gap-2 px-4 lg:px-5 py-2 rounded-full text-xs sm:text-sm
-                border border-green-400 text-green-400 hover:bg-green-400 hover:text-black transition">
-                    <img width="14" src="./assets/message.png" alt="">
+                <button class=" sm:w-auto flex items-center justify-center gap-2 px-3 lg:px-6 py-2 rounded-full text-sm font-semibold
+                border border-green-400 text-green-400 hover:bg-green-400 hover:text-black transition-all">
+                    <img width="18" src="./assets/message.png" alt="Message">
                     Subscribe
                 </button>
 
@@ -110,7 +98,6 @@
 
         </div>
     </section>
-
 
 
     <!-- Hero Section-end -->
