@@ -14,9 +14,10 @@
 
     <!-- hider-sistion start-->
     <div class="bg-[#1A0B2E] w-full border-b fixed z-20 border-gray-500">
-        <div class="max-w-7xl mx-auto px-6 ">
+        <div class="max-w-7xl mx-auto px-6">
             <nav class="flex items-center justify-between h-[62px]">
 
+                <!-- Logo -->
                 <h2 class="text-white text-xl font-bold">
                     Tech<span
                         class="bg-gradient-to-bl from-yellow-400 via-pink-500 to-indigo-500 bg-clip-text text-transparent">
@@ -24,22 +25,33 @@
                     </span>
                 </h2>
 
-
-                <ul class="flex gap-6 text-gray-300 text-sm">
+                <!-- Desktop Menu -->
+                <ul class="hidden lg:flex gap-6 text-gray-300 text-sm">
                     <li class="hover:text-white cursor-pointer transition">About</li>
                     <li class="hover:text-white cursor-pointer transition">Episodes</li>
                     <li class="hover:text-white cursor-pointer transition">Host</li>
                 </ul>
 
-                <button class=" px-5 py-1.5  rounded-[50px] text-white text-sm font-semibold
-            bg-gradient-to-bl from-yellow-500 via-pink-500   to-indigo-500 
-            shadow-md hover:opacity-90 transition">
+                <!-- Desktop Button -->
+                <button class="hidden lg:block px-5 py-1.5 rounded-[50px] text-white text-sm font-semibold
+                bg-gradient-to-bl from-yellow-500 via-pink-500 to-indigo-500 
+                shadow-md hover:opacity-90 transition">
                     Subscribe →
                 </button>
 
+                <!-- Mobile Menu Button -->
+                <div class="lg:hidden text-white text-2xl">
+                    <img src="./assets/hamburger-menu.png" alt="">
+                </div>
+
+
             </nav>
+
+
+
         </div>
     </div>
+
 
 
     <!-- hider-sistion end-->
@@ -49,7 +61,7 @@
 
     <!-- Hero Section-start -->
 
-    <section class="min-h-screen flex items-center justify-center text-center relative overflow-hidden">
+    <section class="h-screen flex items-center justify-center text-center overflow-hidden">
 
 
 
