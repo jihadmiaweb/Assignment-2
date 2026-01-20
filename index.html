@@ -50,44 +50,55 @@
 
     <!-- Hero Section-start -->
     <section style="background-image: url('./assets/hero-bg.png');"
-        class="relative min-h-screen flex    inset-0 z-0 bg-cover bg-center bg-no-repeat items-center justify-center text-center w-full  lg:pt-24 lg:pb-10  ">
+        class="relative min-h-screen flex items-center justify-center text-center w-full bg-cover bg-center bg-no-repeat lg:pt-24 lg:pb-10">
 
         <div class="relative z-10 flex flex-col items-center max-w-4xl mx-auto">
 
-            <div class="relative w-[230px] h-[230px] sm:w-[230px] sm:h-[230px] lg:w-[280px] lg:h-[280px]">
+            <!-- HERO ANIMATED ICON -->
+            <div class="relative w-[230px] h-[230px] sm:w-[230px] sm:h-[230px] lg:w-[280px] lg:h-[280px] animate-hero">
+
+                <!-- Rotating Circle -->
                 <img class="absolute inset-0 w-full h-full object-contain animate-spin-slow"
                     src="./assets/hero-circle.png" alt="Decorative Circle">
 
-                <span
-                    class="absolute top-2 right-0 lg:top-6 lg:right-0 bg-green-400 text-black text-[10px] lg:text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                <!-- NEW Badge -->
+                <span class="absolute top-2 right-0 lg:top-6 lg:right-0 
+                       bg-green-400 text-black text-[10px] lg:text-xs 
+                       font-bold px-3 py-1 rounded-full shadow-lg animate-pulse">
                     NEW
                 </span>
 
-                <div class="absolute inset-0 flex items-center justify-center">
+                <!-- Floating Mic -->
+                <div class="absolute inset-0 flex items-center justify-center animate-float">
                     <img src="./assets/microphone.png" class="w-14 sm:w-16 lg:w-20 drop-shadow-2xl" alt="Microphone">
                 </div>
+
             </div>
 
-            <h1 class="text-white text-2xl sm:text-5xl lg:text-4xl font-bold mt-6 lg:mt-10 tracking-tight">
+            <!-- TEXT CONTENT -->
+            <h1
+                class="text-white text-2xl sm:text-5xl lg:text-4xl font-bold mt-6 lg:mt-10 tracking-tight animate-[fadeInUp_1s_ease-out]">
                 TechWave
             </h1>
 
-            <p class="text-gray-300 text-sm sm:text-base lg:text-lg mt-4 max-w-md mx-auto leading-relaxed">
+            <p
+                class="text-gray-300 text-sm sm:text-base lg:text-lg mt-4 max-w-md mx-auto leading-relaxed animate-[fadeInUp_1.2s_ease-out]">
                 Your daily dose of tech insights, productivity hacks, and personal growth.
             </p>
 
-            <div class="flex flex-row sm:flex-row items-center justify-center gap-4 mt-8 sm:w-auto">
+            <!-- BUTTONS -->
+            <div class="flex flex-row items-center justify-center gap-4 mt-8 animate-[fadeInUp_1.4s_ease-out]">
 
                 <button
-                    class=" sm:w-auto flex items-center justify-center gap-2 px-3 lg:px-6 py-2 rounded-full text-white text-sm font-semibold
-                bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 shadow-xl hover:scale-105 transition-transform">
+                    class="flex items-center justify-center gap-2 px-3 lg:px-6 py-2 rounded-full text-white text-sm font-semibold
+                       bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 shadow-xl hover:scale-105 transition-transform">
                     <img width="18" src="./assets/spotify.png" alt="Spotify">
                     Listen on Spotify
                 </button>
 
-                <button class=" sm:w-auto flex items-center justify-center gap-2 px-3 lg:px-6 py-2 rounded-full text-sm font-semibold
-                border border-green-400 text-green-400  transition-all">
-                    <img width="18" class="cloer-white" src="./assets/message.png" alt="Message">
+                <button class="flex items-center justify-center gap-2 px-3 lg:px-6 py-2 rounded-full text-sm font-semibold
+                       border border-green-400 text-green-400 hover:bg-green-400 hover:text-black transition-all">
+                    <img width="18" src="./assets/message.png" alt="Message">
                     Subscribe
                 </button>
 
@@ -95,6 +106,7 @@
 
         </div>
     </section>
+
     <!-- Hero Section-end -->
 
 
@@ -402,52 +414,52 @@
     <div class="relative overflow-hidden ">
 
         <!-- Background Images -->
-        <div class="absolute inset-0 z-0 pointer-events-none 
+        <div class="absolute inset-0 z-10  
                 bg-[url('./assets/footer-bg.png')] 
                 bg-no-repeat bg-cover bg-center">
         </div>
 
         <!-- Footer Content -->
         <footer class="relative z-10 text-center border-t border-white/5 pt-28 pb-12 px-6">
-            <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold  mb-10 ">
+                <span class="text-white">Tech</span><span
+                    class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span>
+            </h1>
 
-                <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-black tracking-tighter mb-14">
-                    <span class="text-white">Tech</span>
-                    <span class="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">Wave</span>
-                </h1>
 
-                <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-14 text-gray-400 mb-16">
 
-                    <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
-                        <img src="./assets/spotify.png" class="group-hover:brightness-200" alt="Spotify" />
-                        <span class="text-sm md:text-base font-semibold">Spotify</span>
-                    </a>
+            <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-14 text-gray-400 mb-16">
 
-                    <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
-                        <img src="./assets/apple-podcast.png" class="group-hover:brightness-200" alt="Apple" />
-                        <span class="text-sm md:text-base font-semibold">Apple Podcasts</span>
-                    </a>
+                <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
+                    <img src="./assets/spotify.png" class="group-hover:brightness-200" alt="Spotify" />
+                    <span class="text-sm md:text-base font-semibold">Spotify</span>
+                </a>
 
-                    <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
-                        <img src="./assets/youtube-podcast.png" class="group-hover:brightness-200" alt="YouTube" />
-                        <span class="text-sm md:text-base font-semibold">YouTube</span>
-                    </a>
+                <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
+                    <img src="./assets/apple-podcast.png" class="group-hover:brightness-200" alt="Apple" />
+                    <span class="text-sm md:text-base font-semibold">Apple Podcasts</span>
+                </a>
 
-                    <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
-                        <img src="./assets/twitter.png" class="group-hover:brightness-200" alt="Twitter" />
-                        <span class="text-sm md:text-base font-semibold">Twitter</span>
-                    </a>
+                <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
+                    <img src="./assets/youtube-podcast.png" class="group-hover:brightness-200" alt="YouTube" />
+                    <span class="text-sm md:text-base font-semibold">YouTube</span>
+                </a>
 
-                </div>
-
-                <div class="border-t border-white/5 pt-10">
-                    <p class="text-gray-500 text-xs md:text-sm tracking-widest uppercase">
-                        &copy; 2026 TechWave Podcast. All rights reserved.
-                    </p>
-                </div>
+                <a href="#" class="flex items-center gap-2.5 hover:text-white transition-all duration-300 group">
+                    <img src="./assets/twitter.png" class="group-hover:brightness-200" alt="Twitter" />
+                    <span class="text-sm md:text-base font-semibold">Twitter</span>
+                </a>
 
             </div>
-        </footer>
+
+            <div class="border-t border-white/5 pt-10">
+                <p class="text-gray-500 text-xs md:text-sm tracking-widest uppercase">
+                    &copy; 2026 TechWave Podcast. All rights reserved.
+                </p>
+            </div>
+
+    </div>
+    </footer>
 
     </div>
 
